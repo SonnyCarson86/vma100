@@ -1,0 +1,257 @@
+/*******************************TAG SELECTORS*********************************/
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #a1cae2;
+  color: #ffffff;
+  font-family: 'Playfair Display SC', serif;
+}
+
+hr {
+  border-color: #335d2d;
+  border-style: solid none none;
+  border-width: 5px;
+  height: 0;
+  width: 50%;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Lobster', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Lobster Two', cursive;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+table {
+  align-items: center;
+  cellpadding: 20;
+  cellspacing: 10;
+  
+}
+
+
+
+/***********************************CLASS SELECTORS***************************/
+
+/****these are the three containers*****/
+
+.top-container {
+
+}
+
+.middle-container-left {
+
+
+
+}
+
+
+.middle-container-right {
+
+
+}
+.bottom-container {}
+
+
+
+
+
+/***these are the top container landing area header, ufo, cloud and mountain image codes*******/
+.ufo {
+  width: 30px;
+  height: 15px;
+  padding-top: 0px;
+  position: absolute;
+  animation: mymove2 60s infinite;
+}
+.bottomcloud {
+  position: absolute;
+  animation: mymove3 60s infinite;
+}
+
+.topcloud {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  animation: mymove 60s infinite;
+}
+
+.img-hor-vert {
+  transform: rotate(.5turn);
+}
+
+.lib {
+  text-decoration: underline;
+}
+
+/*********these are codes for styling all other images**********/
+.ebaylogo {
+  width: 75%;
+  height: 75%;
+  border: 5px solid black;
+}
+.warhero {
+  width: 25%;
+  height: 25%;
+  border-radius: 90%;
+  border: 5px solid black;
+  position: relative;
+}
+.formerchef {
+  position: relative;
+  right: 5%;
+}
+.toprated {
+  position: relative;
+  left: 5%;
+}
+.work {
+  width: 40%;
+  length: 40%;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+.ebay {
+  text-align: center;
+}
+/*******these are image animation codes******/
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 300px;
+  }
+}
+
+@keyframes mymove2 {
+  from {
+    left: 5px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes mymove3 {
+  from {
+    left: 350px;
+  }
+
+  to {
+    left: 420px;
+  }
+}
+
+/*******these are text animation codes*****/
+
+
+/****this is the text shine code*****/
+.effect-shine2 {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 100%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+/***this is hover text code****/
+.tags {
+  display: inline;
+  position: relative;
+}
+
+.tags:hover:after {
+  background: #333;
+  background: rgba(0, 0, 0, .8);
+  border-radius: 5px;
+  bottom: 34px;
+  color: #b8de6f;
+  content: attr(gloss);
+  left: 0;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+  width: 150px;
+  font-size: 20px;
+}
+
+.tags:hover:before {
+  border: solid;
+  border-color: #333 transparent;
+  border-width: 0 6px 6px 6px;
+  bottom: -4px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
+}
+
+
+
+@media(max-width: 1000px) {
+  h1 {
+  font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.125rem;
+  }
+
+  .topcloud  {
+    max-width: 25%;
+  }
+
+  .bottomcloud  {
+    max-width: 25%;
+  }
+
+}
+
+@media(max-width: 800px) {
+
+}
